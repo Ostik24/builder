@@ -1,5 +1,5 @@
-import main.java.com.MyImage;
-import main.java.com.ProxyImage;
+import com.MyImage;
+import com.ProxyImage;
 
 import org.junit.jupiter.api.Test;
 
