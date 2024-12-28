@@ -2,7 +2,7 @@ package com;
 
 public class ProxyImage implements MyImage {
     private RealImage realImage;
-    private final String filename;
+    private String filename;
 
     public ProxyImage(String filename) {
         this.filename = filename;
@@ -14,5 +14,23 @@ public class ProxyImage implements MyImage {
             realImage = new RealImage(filename);
         }
         realImage.display();
+    }
+}
+
+class RealImage implements MyImage {
+    private String filename;
+
+    public RealImage(String filename) {
+        this.filename = filename;
+        loadFromDisk();
+    }
+
+    private void loadFromDisk() {
+        System.out.println("Loading image: " + filename);
+    }
+
+    @Override
+    public void display() {
+        System.out.println("Displaying image: " + filename);
     }
 }
