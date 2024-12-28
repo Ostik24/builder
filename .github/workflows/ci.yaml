@@ -26,4 +26,4 @@ jobs:
       run: |
         mvn clean install
         mvn test
-      working-directory: builder/lab11
+      working-directory: lab11
