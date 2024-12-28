@@ -1,3 +1,6 @@
+import src.java.com.MyImage;
+import src.java.com.ProxyImage;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
