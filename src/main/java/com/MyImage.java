@@ -2,15 +2,9 @@ package com;
 
 import java.awt.GraphicsEnvironment;
 
-public class MyImage {
+public interface MyImage {
     private String filename;
 
-    // Default constructor
-    public MyImage() {
-        this.filename = "default_image.jpg";  // Default filename
-    }
-
-    // Constructor with filename
     public MyImage(String filename) {
         this.filename = filename;
     }
