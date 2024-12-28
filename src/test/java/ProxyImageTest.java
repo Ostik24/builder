@@ -1,5 +1,5 @@
-import src.java.com.MyImage;
-import src.java.com.ProxyImage;
+import main.java.com.MyImage;
+import main.java.com.ProxyImage;
 
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +9,7 @@ public class ProxyImageTest {
     @Test
     public void testLazyLoading() {
         MyImage proxyImage = new ProxyImage("test.jpg");
-        proxyImage.display(); // Should create and load RealImage
-        assertNotNull(proxyImage); // Validate that ProxyImage is functional
+        proxyImage.display();
+        assertNotNull(proxyImage);
     }
 }
